@@ -3,7 +3,7 @@ public class LoginGamesMini {
 
 	public static void main(String[] args) {
 		
-		// This is the first Push
+		System.out.println("hello world");
 
 	}
 
