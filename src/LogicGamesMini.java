@@ -1,5 +1,5 @@
 
-public class LoginGamesMini {
+public class LogicGamesMini {
 
 	public static void main(String[] args) {
 		
