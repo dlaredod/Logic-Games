@@ -5,7 +5,6 @@ public class BoardPair {
 	private int col;
 	private int id;
 
-
 	public BoardPair(int i, int j, int id){
 		
 		this.row = i;
@@ -29,8 +28,5 @@ public class BoardPair {
 	public int getNotLiteral() {
 		return -id;
 	}
-	
-	
-
 
 }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class BoardHandler {
@@ -35,7 +36,7 @@ public class BoardHandler {
 		}
 	}
 
-	private static String[] getRow(int cols) {
+	private static String[] getRow() {
 		
 		Scanner scan = new Scanner(System.in);
 		String row = scan.nextLine();
@@ -45,6 +46,26 @@ public class BoardHandler {
 
 	public static String[][] randomizeBoard(int rows, int cols){
 		
+		return null;
+	}
+
+	public static Set<Conflict> getConflicts(String[][] board) {
+		
+		Set<Conflict> rowsC = getRowsConflicts(board);
+		Set<Conflict> colsC = getColsConflicts(board);
+		
+		rowsC.addAll(colsC);
+		return rowsC;
+		
+	}
+
+	private static Set<Conflict> getColsConflicts(String[][] board) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static Set<Conflict> getRowsConflicts(String[][] board) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 	

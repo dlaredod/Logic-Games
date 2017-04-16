@@ -1,3 +1,5 @@
+import java.util.Set;
+
 import org.sat4j.core.VecInt;
 import org.sat4j.minisat.SolverFactory;
 import org.sat4j.specs.ContradictionException;
@@ -13,6 +15,7 @@ public class LogicGamesMini {
 		
 		String[][] board = BoardHandler.getBoard(5, 5);
 		BoardHandler.printBoard(board);
+		Set<Conflict> conflicts = BoardHandler.getConflicts(board);
 		
 		ISolver solver = SolverFactory.newDefault();
 		solver.setExpectedNumberOfClauses(5);
